@@ -10,9 +10,10 @@ h1 {
     font-weight: bold;
 }
 .drum-pad {
-    font-size: 20pt;
     font-weight: bold;
-    margin: 5px 5px 5px 5px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+#drum-pad-Q, #drum-pad-W, #drum-pad-E, #drum-pad-A, #drum-pad-S, #drum-pad-D, #drum-pad-Z, #drum-pad-X, #drum-pad-C {
+    font-size: 28pt;
 }
