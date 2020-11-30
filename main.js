@@ -154,60 +154,66 @@ class MyReactComponent extends React.Component {
   }
   render() {
     return (
-      <div onKeyDown={this.handleDisplay}>
-        <div id="display" className="row customClassMain">
-          <div className="col-md-2"></div>
-          <div className="col-md-8 text-center">
-            <h1>Drum Machine</h1>
-            <br/>
-            <h4>Press one of the following keys to play</h4>
-            <div className="btn-group-lg btn-group-horizontal">
-              <button id="drum-pad-Q" className="drum-pad btn btn-default btn-lg text-center" onClick={this.handleClickQ}>
-                <audio id="Q" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
-                Q
-                </button>
-              <button id="drum-pad-W" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickW}>
-                <audio id="W" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
-                W
-              </button>
-              <button id="drum-pad-E" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickE}>
-                <audio id="E" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
-                E
-              </button>
-            </div>
-            <div className="btn-group-lg btn-group-horizontal">
-              <button id="drum-pad-A" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickA}>
-                <audio id="A" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
-                A
-              </button>
-              <button id="drum-pad-S" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickS}>
-                <audio id="S" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
-                S
-              </button>
-              <button id="drum-pad-D" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickD}>
-                <audio id="D" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
-                D
-              </button>
-            </div>
-            <div className="btn-group-lg btn-group-horizontal">
-              <button id="drum-pad-Z" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickZ}>
-                <audio id="Z" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
-                Z
-              </button>
-              <button id="drum-pad-X" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickX}>
-                <audio id="X" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
-                X
-              </button>
-              <button id="drum-pad-C" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickC}>
-                <audio id="C" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
-                C
-              </button>
-            </div>
-            <p>Key pressed: {this.state.key}</p>
+        <div id="display" className="row" onKeyDown={this.handleDisplay}>
+          <div className="col-md-3">
           </div>
-          <div className="col-md-2"></div>
+          <div className="col-md-6 text-center">
+            <div className="customClassMain">
+              <h1>Drum Machine</h1>
+              <br/>
+              <h3 className="customClassP">Press one of the following keys to play</h3>
+              <br/>
+              <div className="drum-main">
+                <div className="btn-group-lg btn-group-horizontal">
+                  <button id="drum-pad-Q" className="drum-pad btn btn-default btn-lg text-center" onClick={this.handleClickQ}>
+                    <audio id="Q" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+                    Q
+                    </button>
+                  <button id="drum-pad-W" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickW}>
+                    <audio id="W" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"></audio>
+                    W
+                  </button>
+                  <button id="drum-pad-E" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickE}>
+                    <audio id="E" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"></audio>
+                    E
+                  </button>
+                </div>
+                <div className="btn-group-lg btn-group-horizontal">
+                  <button id="drum-pad-A" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickA}>
+                    <audio id="A" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"></audio>
+                    A
+                  </button>
+                  <button id="drum-pad-S" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickS}>
+                    <audio id="S" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"></audio>
+                    S
+                  </button>
+                  <button id="drum-pad-D" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickD}>
+                    <audio id="D" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"></audio>
+                    D
+                  </button>
+                </div>
+                <div className="btn-group-lg btn-group-horizontal">
+                  <button id="drum-pad-Z" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickZ}>
+                    <audio id="Z" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"></audio>
+                    Z
+                  </button>
+                  <button id="drum-pad-X" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickX}>
+                    <audio id="X" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
+                    X
+                  </button>
+                  <button id="drum-pad-C" className="drum-pad btn btn-default btn-lg" onClick={this.handleClickC}>
+                    <audio id="C" className="clip" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
+                    C
+                  </button>
+                </div>
+              </div>
+              <br/>
+              <p className="customClassP">Key pressed: {this.state.key}</p>
+            </div>
+          </div>
+          <div className="col-md-3">
+          </div>
         </div>
-      </div>
     );
   }
 };

@@ -9,11 +9,17 @@
 h1 {
     font-weight: bold;
 }
+.drum-main {
+    width: 300px;
+}
 .drum-pad {
     font-weight: bold;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 #drum-pad-Q, #drum-pad-W, #drum-pad-E, #drum-pad-A, #drum-pad-S, #drum-pad-D, #drum-pad-Z, #drum-pad-X, #drum-pad-C {
-    font-size: 28pt;
+    font-size: 24pt;
+}
+.customClassP {
+    font-size: 14pt;
 }
